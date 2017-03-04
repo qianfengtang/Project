@@ -1,0 +1,368 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+/*2345理财 begin*/
+.wrap{
+	float:left
+}
+.wrap a{
+	text-decoration: none;
+}
+.wrap ul{
+	list-style: none;
+}
+
+.nav{
+	width:1862px;
+	height:35px;
+	margin:0px auto;
+	background: #f9f9f9;
+    border-bottom: 1px solid #ebebeb;
+    padding:6px 0px
+}
+.nav a{
+	display:block;
+	width:73px;
+	height: :12px;
+	text-decoration:none;
+	margin-top:3px
+}
+.nav a:link{
+	color: #999999;
+    font: 12px/1.5px "宋体";
+}
+.nav a:visited{
+	color:black;
+}
+.nav a:hover{
+	color:red;
+}
+.nav a:active{
+	color: green;
+}
+.nav ul{
+	list-style:none;
+}
+.nav1{
+	width:350px;
+	height: 21px;
+	float:left;
+}
+.nav1 li{
+	width: 73px;
+	height: 12px;
+	float:left;
+	border-right:1px solid darkgray;
+	margin-right:3px;
+	margin-top:2px;
+	padding-right:0px;
+}
+
+.nav1 ul li:last-child{
+	border-right:none
+}
+.nav2 {
+	width: 1200px;
+	height:22px;
+	float:right;
+}
+.nav2 li{
+	width: 73px;
+	height: 12px;
+	float:right;
+}
+.nav2 ul li:last-child{
+	border-right: 1px solid darkgray;
+}
+/*导航*/
+.head1a{
+	width:600px;
+	height:70px;
+	/*border:1px solid red;*/
+	float:left;
+}
+.top1 {
+	width:623px;
+	height:48px;
+	float:left;
+	
+}
+.top1 li{
+	width:68px;
+	height: 36px;
+	float:left;
+	margin-left: 10px;
+	margin-top:20px;
+}
+.top1 a:hover{
+	border:1px solid orangered;
+	border-radius: 10%;
+	background-color: orangered;
+}
+.top2{
+	width:220px;
+	height: 60px;
+	float:right;
+}
+/*top1 end*/
+/*friendlink begin*/
+.wrap1{width:1200px;
+	margin:10px auto;
+}
+.wrap1 a{
+	text-decoration: none;
+}
+.wrap1 li{
+	list-style: none;
+}
+.friendlink a:link{
+    color: #999999;
+}
+.friendlink li:hover{
+	border:1px solid red
+}
+.friendlink li{
+	width: 163px;
+	height: 94px;
+	float: left;
+	margin-right: 5px;
+	background-color: #fff;
+	margin-bottom: 5px;
+	border:1px solid #EBEBEB;
+	text-align:center;
+	font: 14px/1.5 arial, "微软雅黑", sans-serif;
+	color: #666;
+}
+.friendlink p{
+    height: 28px;
+    line-height: 28px;
+    color: #999999;
+}
+/*friendlink end*/
+/*subnav begin*/
+.subnav {
+	width:1200px;
+	margin-top:30px;
+}
+.hot1{
+	width: 65px;
+	height: 50px;
+	background-image: url(../img/2345.png);
+	background-position: -80px -160px;
+	background-repeat: none;
+	float:left;
+	position: absolute;
+	top: -4px;
+	left: -1px;
+}
+.hot2{
+	width: 65px;
+	height: 50px;
+	background-image: url(../img/2345.png);
+	background-position: -80px -160px;
+	background-repeat: none;
+	float:left;
+	position: absolute;
+	top: -4px;
+	left: -1px;
+}
+.subnav>a{
+	dispaly:block;
+	width:185px;
+	height: 45;
+	line-height: 47px;
+}
+.subnav li{
+	width:238px;
+	height:45px;
+	text-align: center;
+	float:left;
+	background-color: #FAFAFA;
+	border:.1px solid lightgray;
+	position: relative;
+}
+.subnav a{
+	display:block;
+	line-height: 47px;
+	color: black;
+}
+.subnav>a{
+	text-align: left;
+}
+.subnav a:hover{
+	color:#FF0000;
+}
+/*subnav end*/
+/*content begin*/
+.content li{
+	width:238px;
+	height: 116px;
+	text-align: center;
+	float:left;
+	background-color: #FFFFFF;
+	border:.1px solid lightgray;
+}
+.content p{
+	color: #999999;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	line-height: 34px;
+}
+.content span{
+	color:#f5594e;
+}
+.content strong{
+	font-size:30px;
+}
+.content a{
+	display:block;
+	line-height: 31px;
+	width: ;
+	border: 1px solid #e8574d;
+	border-radius: 2px;
+	background-color: #e8574d;
+	font: 14px/30px 微软雅黑;
+	color:#fff;
+	width:114px;
+	margin:auto;
+}
+/*content end*/
+/*ad begin*/
+.wrap1 .ad{
+	width: 1200px;
+	margin-top: 30px;
+}
+.xianshi{
+	font-size: 16px;
+	color: #999999;
+}
+.adlist{
+	width: 1200px;
+	margin-top:14px ;
+}
+.adlist li{
+	width: 284px;
+	height: 184px;
+	font-size: 16px;
+	font-weight: bold;
+	background: #fff;
+	overflow: hidden;
+	text-align: center;
+	float:left;
+	margin-right: 14px;
+	border:1px solid white;
+}
+.adlist li:hover{
+	border:1px solid #FF0000;
+}
+.adlist a{
+	color:black;
+}
+/*ad end*/
+
+/*project begin*/
+.project{
+	width: 1200px;
+	margin-top: 20px;
+	clear:both;
+}
+.project p{
+	width:1200px;
+	height: 42px;
+	font: 22px/42px "微软雅黑";
+	color: #666e80;
+}
+.project span{
+	font-size: 16px;
+	color: #999999;
+	margin-left: 5px;
+}
+table{
+	border: 1px solid #e6e6e6;
+	background: #fff;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top: 15px;	
+	text-align: center;
+}
+table a{
+	font: 14px/1.5 arial, "微软雅黑", sans-serif;
+	color: black;
+}
+table a:hover{
+	color: #f5594e;
+}
+.per{
+	font-size: 18px;
+	color: #f95353;
+}
+.botton{
+	display:block;
+	height: 26px;
+	line-height: 26px;
+	padding: 0 22px;
+	font-size: 12px;
+	background:#F45246;
+	color: white;
+	width: 92px;
+}
+.botton:hover{
+	color:white;
+}
+/*project end*/
+/*footer begin*/
+.footer{
+	width:1200px;
+	height: 115px;
+	margin:36px auto;
+	font-family: 微软雅黑;
+	text-align: center;
+	color: #999999;
+}
+.footer1{
+	width:1200px;
+	height: 26px;
+	padding:14px auto;
+	border-bottom:1px solid #999999;
+	margin-bottom: 12px;
+	text-align: center;
+	position:relative;
+	
+}
+.footer1 li{
+	float:left;}
+.footer1 a{
+	display:block;
+	width:60.86px;
+	height: 20px;
+	padding:0px 16px;
+	border-left-color: rgb(208, 208, 208);
+	border-left-style: solid;
+	border-left-width: 1px;
+	text-align: center;
+	margin-left: -1px;
+	font-size:14px;
+	font-family: "微软雅黑";
+	color: gray;
+}
+.tesu{
+	border-left:hidden;
+}
+.footer1 a:hover{
+	color: red;
+}
+.footer1 ul{
+	position: absolute;
+	left:430px;
+	overflow: hidden;
+}
+.footer2{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+}
+/*footer end*/
+/*2345理财 end*/
