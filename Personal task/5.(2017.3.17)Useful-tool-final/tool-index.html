@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>体育小工具等着你来测！</title>
+		<link rel="stylesheet" type="text/css" href="nav-index.css"/>
+		<script type="text/javascript" src="nav-index.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jcdx.css"/>
+		<link rel="stylesheet" type="text/css" href="css/training.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Pace-calc-index.css"/>
+	</head>
+	<body>
+		<!--wrap begin-->
+		<div class="wrap" id="wrap">
+			<!--header begin-->
+			<div class="header">
+				<p>益跑计算工具包</p>
+				<ul class="word">
+					<li class="text1">从不羡慕别人的优秀，因为相信自己也可以优秀。</li>
+					<li class="text2">闲下来时看看书，书本里的故事，总有你学到的人生。</li>
+					<li class="text3">---By:和乐小组</li>
+				</ul>
+				<img src="img/logo-pic.jpg" class="logo-pic" />
+			</div>
+			<!--header end-->
+			<!--nav-begin-->
+			<div class="nav">
+				<ul>
+					<li><a href="#wrap">返回头部</a></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptotqf('tqf')">配速计算</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptotqf('tqf')">配速转换</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptotqf('tqf')">完跑计算</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptohhy('hhy')">马拉松配速</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptohhy('hhy')">BMI计算</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptohhy('hhy')">卡路里计算</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptocy('cy')">训练计算</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptocy('cy')">国家运动等级</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptowy('wy')">基础代谢</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+					<li class="heiheihei"><a href="javascript:;" onclick="jumptowy('wy')">公英制计算</a><!--<a href="#" class="heihei">点我跳转</a>--></li>
+				</ul>
+			</div>
+			<!--nav-end-->
+			<!--content begin-->
+			<div class="content">
+				<div class="banner">
+					<div class="contain" id="container">
+						<a href="#"><img src="img/s-banner1.jpg" id="pic1"/></a>
+						<a href="#"><img src="img/s-banner2.jpg" id="pic2"/></a>
+						<a href="#"><img src="img/s-banner3.jpg" id="pic3"/></a>
+						<a href="#"><img src="img/s-banner4.jpg" id="pic4"/></a>
+						<a href="#"><img src="img/s-banner5.jpg" id="pic5"/></a>
+					</div>
+					<!--button begin-->
+					<a href="javascript:;" id="button-left"></a>
+					<a href="javascript:;" id="button-right"></a>
+				<!--button end-->	
+				</div>
+				<div class="ctl-banner">
+					<ul>
+						<li><a href="javascript:;" id="s-ctl1"><img src="img/s-b1.jpg"/></a></li>
+						<li><a href="javascript:;" id="s-ctl2"><img src="img/s-b2.jpg"/></a></li>
+						<li><a href="javascript:;" id="s-ctl3"><img src="img/s-b3.jpg"/></a></li>
+						<li><a href="javascript:;" id="s-ctl4"><img src="img/s-b4.jpg"/></a></li>
+						<li><a href="javascript:;" id="s-ctl5"><img src="img/s-b5.jpg"/></a></li>
+					</ul>
+					<div class="con-box" id="con-box"></div>
+				</div>
+				<div class="pragraph">
+					<p>毕竟不是作家，写不出那么好的文章。--因为没有丰富阅历和经验！ </p>
+				</div>
+				
+			</div>
+			<!--content end-->
+		</div>
+		<!--wrap end-->
+		<div class="general">
+		<!--黄红燕-->
+		<div class="wrapper" id="hhy">
+			<div class="sidebar">
+				<ul>
+					<li><a href="javascript:;" id="click1">马拉松配速指南（Marathon Pace）</a></li>
+					<li><a href="javascript:;" id="click2">BMI体重指数计算器</a></li>
+					<li><a href="javascript:;" id="click3">卡路里计算器（Calorie）</a></li>
+				</ul>
+				
+			</div>
+			<div class="content3">
+				<h2>马拉松配速指南<em>（Marathon Pace Guide）</em></h2>
+				<p>
+				输入你马拉松 预计完赛的时间（？小时?分？秒）或预计配速（？分？秒/公里），计算出另外一项和每公里所用的时间（1-42公里）
+				</p>
+				<form action="" method="post">
+					<div class="time">
+						<span>预计完赛的时间：</span>
+						<select name="" id="select1">
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+						</select>
+						<span>时</span>
+						<select name="" id="select2">
+							<option value="">0</option>	
+							<option value="">1</option>	
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+							<option value="">13</option>	
+							<option value="">14</option>
+							<option value="">15</option>
+							<option value="">16</option>
+							<option value="">17</option>
+							<option value="">18</option>
+							<option value="">19</option>
+							<option value="">20</option>
+							<option value="">21</option>
+							<option value="">22</option>
+							<option value="">23</option>	
+							<option value="">24</option>
+							<option value="">25</option>
+							<option value="">26</option>
+							<option value="">27</option>
+							<option value="">28</option>
+							<option value="">29</option>
+							<option value="">30</option>
+							<option value="">31</option>
+							<option value="">32</option>
+							<option value="">33</option>	
+							<option value="">34</option>
+							<option value="">35</option>
+							<option value="">36</option>
+							<option value="">37</option>
+							<option value="">38</option>
+							<option value="">39</option>
+							<option value="">40</option>
+							<option value="">41</option>
+							<option value="">42</option>
+							<option value="">43</option>	
+							<option value="">44</option>
+							<option value="">45</option>
+							<option value="">46</option>
+							<option value="">47</option>
+							<option value="">48</option>
+							<option value="">49</option>
+							<option value="">50</option>
+							<option value="">51</option>
+							<option value="">52</option>
+							<option value="">53</option>	
+							<option value="">54</option>
+							<option value="">55</option>
+							<option value="">56</option>
+							<option value="">57</option>
+							<option value="">58</option>
+							<option value="">59</option>
+						</select>
+						<span>分</span>
+						<select name="" id="select3">
+							<option value="">0</option>	
+							<option value="">1</option>	
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">6</option>
+							<option value="">7</option>
+							<option value="">8</option>
+							<option value="">9</option>
+							<option value="">10</option>
+							<option value="">11</option>
+							<option value="">12</option>
+							<option value="">13</option>	
+							<option value="">14</option>
+							<option value="">15</option>
+							<option value="">16</option>
+							<option value="">17</option>
+							<option value="">18</option>
+							<option value="">19</option>
+							<option value="">20</option>
+							<option value="">21</option>
+							<option value="">22</option>
+							<option value="">23</option>	
+							<option value="">24</option>
+							<option value="">25</option>
+							<option value="">26</option>
+							<option value="">27</option>
+							<option value="">28</option>
+							<option value="">29</option>
+							<option value="">30</option>
+							<option value="">31</option>
+							<option value="">32</option>
+							<option value="">33</option>	
+							<option value="">34</option>
+							<option value="">35</option>
+							<option value="">36</option>
+							<option value="">37</option>
+							<option value="">38</option>
+							<option value="">39</option>
+							<option value="">40</option>
+							<option value="">41</option>
+							<option value="">42</option>
+							<option value="">43</option>	
+							<option value="">44</option>
+							<option value="">45</option>
+							<option value="">46</option>
+							<option value="">47</option>
+							<option value="">48</option>
+							<option value="">49</option>
+							<option value="">50</option>
+							<option value="">51</option>
+							<option value="">52</option>
+							<option value="">53</option>	
+							<option value="">54</option>
+							<option value="">55</option>
+							<option value="">56</option>
+							<option value="">57</option>
+							<option value="">58</option>
+							<option value="">59</option>
+						</select>
+						<span>秒</span>
+						<p>
+							或 预计配速：
+							<input type="text" name="" class="muit" value="" />分
+							<input type="text" name="" class="seec" id="" value="" /> 秒 / 公里
+						</p>
+					</div>
+					<input type="button" name="" id="count" value="计算" />
+					<input type="reset" name="" id="clear" value="重置" />
+				</form>
+				<img src="img/dht.png"/>
+				<div class="result">
+					<span id="km">每公里所用的时间：</span>
+					<p id="god">简直不可思议!没有匹配数据</p>
+					<table class="table1" id="tab1" border="0" cellspacing="0" width="100%">
+						<colgroup>
+						<col width="15%">
+						<col width="30%">
+						<col width="25%">
+						<col width="30%">
+					</colgroup>
+						<tr>
+							<td class="right">1km</td>
+							<td id="td1"></td>
+							<td class="right">20km</td>
+							<td id="td2"></td>
+						</tr>
+						<tr>
+							<td class="right">2km</td>
+							<td id="td3"></td>
+							<td class="right">半程马拉松</td>
+							<td id="td4"></td>
+						</tr>
+						<tr>
+							<td class="right">5km</td>
+							<td id="td5"></td>
+							<td class="right">30km</td>
+							<td id="td6"></td>
+						</tr>
+						<tr>
+							<td class="right">10km</td>
+							<td id="td7"></td>
+							<td class="right">全程马拉松</td>
+							<td id="td8"></td>
+						</tr>
+						<tr>
+							<td class="right">15km</td>
+							<td id="td9"></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="content1">
+				<h2>BMI体重指数计算器<em>（Body Mass Index Calculator）</em></h2>
+				<p>
+					输入体重（公斤）、身高（厘米），计算BMI=体重（公斤）/身高（米）平方<br/>
+					75KM 175CM BMI=75/1.75×1.75=24.49<br/>
+					偏轻（低于18.5）、正常（18.5-24.9）、偏重（25-29.9）、肥胖（30及以上）
+				</p>
+				
+					<form action="" method="post">
+						<div class="bim">
+							<span>身高：</span>
+							<input type="text" name="" id="high" value="" /><span> 厘米</span><br/>
+							<span>体重：</span>
+							<input type="text" name="" id="weight" value="" /><span> 公斤</span><br/>
+						</div>
+						<input type="button" name="" id="count1" value="计算" />
+						<input type="reset" name="" id="clear1" value="重置" />
+						<span id="pass">数据错误</span>
+					</form>
+					<img src="img/dht.png"/>
+					<div class="result">
+					
+					<p id="gb">您的体重指数为 <span class="resule"></span> 属于：<span class="round"></span></p>
+					</div>
+				</div>
+				<div class="content2">
+					<h2>卡路里计算器<em>（Calorie Calculator）</em></h2>
+					<p>
+						
+						输入跑步距离（公里）、体重（公斤）计算卡路里。
+			
+					</p>
+					<form action="" method="post">
+						<div class="run">
+							<span>跑步距离：</span>
+							<input type="text" name="" id="distance" value="" /><span> 公里</span><br/>
+							<span class="ind">体重：</span>
+							<input type="text" name="" id="weight1" value="" /><span> 公斤</span><br/>
+						</div>
+							<input type="button" name="" id="count2" value="计算" />
+							<input type="reset" name="" id="clear2" value="重置" />
+							<span id="pass1">数据错误</span>
+					</form>
+						<img src="img/dht.png"/>
+					<div class="result">
+						<p id="nel">您消耗了 <span class="resule1"></span>千卡 kcal</p>
+					</div>
+				</div>
+		</div>
+		<!--汪娅-->
+		<div class="box" id="wy">
+			<div class="box_two">
+				<!--左边部分-->
+				<div class="left">
+				  <div class="left-box">
+					<div class="left-head">
+						<h2><a href="javascript:;" id="jc">基础代谢计算器</a></h2>
+					    <h2><a href="javascript:;" id="gy">公英制转换</a></h2>
+					    <a href="javascript:;" id=""><img src="" /></a>
+					</div>
+					
+				</div>
+			</div>
+			<!--右边部分-->
+			<div id="right_12">
+				<h1>基础代谢计算器</h1>
+				<p>基础代谢率(Basal Metabolic Rate,简称BMR)是指：我们在安静状态下(通常为静卧状态)消
+					耗的最低热量,人的其他活动都建立在这个基础上.</p>
+				<p>一日理想卡路里摄取量=BMR×活动因子指数</p>
+				<form id="bg">
+					<table>
+						<tbody>
+							<tr>
+								<td nowrap="nowrap" align="right">性别：</td>
+								<td nowrap="nowrap">
+									<input type="radio" name="nan" id="man" value="1"/>男
+									<input type="radio" name="nan" id="woman" value="2"/>女
+								</td>
+							</tr>
+							<tr class="tr-second">
+								<td nowrap="nowrap" align="right">身高：</td>
+								<td nowrap="nowrap"><input type="text" id="height">Cm</td>
+								<td nowrap="nowrap">体重：</td>
+								<td nowrap="nowrap"><input type="text" id="weight_tz"/>Kg</td>
+								<td nowrap="nowrap">年龄：</td>
+								<td nowrap="nowrap"><input type="text" id="old"/>岁</td>
+							</tr>
+							<tr>
+								<td class="third" colspan="6">
+									<span>运动习惯：</span>
+									<div class="input1"><!--value的值在js里可以直接取如option1.value-->
+										<input type="radio" name="dx" id="option1" value="1.15"/>长时间坐在办公室、教室里,很少或是完全没有运动的人.<br/>
+									    <input type="radio" name="dx" id="option2" value="1.3"/>偶尔会运动或散步、逛街、到郊外踏青,每周大约少量运动1~3次的人.<br/>
+									    <input type="radio" name="dx" id="option3" value="1.4"/>有坚持运动的习惯,或是会上健身房,每周大约运动3~6次的人.<br/>
+									    <input type="radio" name="dx" id="op_four" value="1.6"/>热爱运动,每周运动6~7次,或是工作量相当大的人.<br/>
+									    <input type="radio" name="dx" id="option5" value="1.8"/>工作或生活作息需要大量劳动,相当消耗能量的人.<br/>
+									</div>
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="count_zo">
+						<a href="javascript:;" id="count_1">计算</a>
+						<a href="javascript:;" id="clear_wa">重置</a>
+					</div>
+					<div id="r_bottom"><img src="img/dd.png" id="count1-top"/>
+					  <span id="result" style="display: block; width: 250px; height: 10px;" ></span>
+					</div>
+				</form>
+			</div>
+			<!--公英制转换-->
+			<div id="right_2">
+				<h4 class="ying">公英制转换</h4>
+				<ul>
+					<li>
+						<input type="text" id="inch1"/>
+						<span>英里</span>
+						<a href="javascript:;" id="equal1"><img src="img/dhao.png" /></a>
+						
+						<input type="text" id="inch2"/>
+						<span>公里</span>
+						<a href="javascript:;" id="clear_a"><input type="button" value="重置"/></a>
+						
+					</li>
+					<li>
+						<input type="text" id="inch3"/>
+						<span>英寸</span>
+						<a href="javascript:;" id="equal2"><img src="img/dhao.png" /></a>
+						
+						<input type="text" id="inch4"/>
+						<span>厘米</span>
+						<a href="javascript:;"id="clear_b"><input type="button" value="重置"/></a>
+						
+					</li>
+					<li>
+						<input type="text" id="inch5"/>
+						<span>英里</span>
+						<a href="javascript:;" id="equal3"><img src="img/dhao.png" /></a>
+						
+						<input type="text" id="inch6"/>
+						<span>公里</span>
+						<a href="javascript:;" id="clear_c"><input type="button" value="重置"/></a>
+						
+					</li>
+					<li>
+						<input type="text" id="inch7"/>
+						<span>英里</span>
+						<a href="javascript:;" id="equal4"><img src="img/dhao.png" /></a>
+						
+						<input type="text" id="inch8"/>
+						<span>公里</span>
+						<a href="javascript:;" id="clear_d"><input type="button" value="重置"/></a>
+						
+					</li>
+					<li>
+						<input type="text" id="inch9"/>
+						<span>英里</span>
+						<a href="javascript:;"id="equal5"><img src="img/dhao.png" /></a>
+						
+						<input type="text" id="inch10"/>
+						<span>公里</span>
+						<a href="javascript:;" id="clear_e"><input type="button" value="重置"/></a>
+						
+					</li>
+					<li>
+						<input type="text" id="inch11"/>
+						<span>英里</span>
+						<a href="javascript:;" id="equal6"><img src="img/dhao.png" /></a>
+						
+						<input type="text" id="inch12"/>
+						<span>公里</span>
+						<a href="javascript:;" id="clear_f"><input type="button" value="重置"/></a>
+						
+					</li>
+				</ul>
+			</div>
+			</div>
+			
+			
+		</div>
+		<!--汪娅-->
+		<!--成燕-->
+		<div class="wrapper_1" id="cy">
+			<div class="con_left">
+				<ul>
+					<li id="counter" >
+						<a href="javascript:;">训练计算器</a>
+					</li>
+					<li id="level">
+						<a href="javascript:;">国家运动员等级</a>
+					</li>
+				</ul>
+			</div>
+			<div class="all_right">
+				<div class="con_right" id="ct">
+					<span class="title" >
+					<h2>训练计算器<em>（Training Calculator）</em></h2>
+				</span>
+					<div class="center">
+						<div class="runing">
+							<p>
+								<span>最新的跑步距离：</span>
+								<input type="text" name="" id="distains" value="" />
+								<span>公里</span>
+							</p>
+							<p>
+								<span>最新的跑步用时：</span>
+								<select id="hours">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+								</select>
+								<span>时</span>
+								<select id="muins">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+									<option value="32">32</option>
+									<option value="33">33</option>
+									<option value="34">34</option>
+									<option value="35">35</option>
+									<option value="36">36</option>
+									<option value="37">37</option>
+									<option value="38">38</option>
+									<option value="39">39</option>
+									<option value="40">40</option>
+									<option value="41">41</option>
+									<option value="42">42</option>
+									<option value="43">43</option>
+									<option value="44">44</option>
+									<option value="45">45</option>
+									<option value="46">46</option>
+									<option value="47">47</option>
+									<option value="48">48</option>
+									<option value="49">49</option>
+									<option value="50">50</option>
+									<option value="51">51</option>
+									<option value="52">52</option>
+									<option value="53">53</option>
+									<option value="54">54</option>
+									<option value="55">55</option>
+									<option value="56">56</option>
+									<option value="57">57</option>
+									<option value="58">58</option>
+									<option value="59">59</option>
+
+								</select>
+								<span>分</span>
+								<select id="second_2">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+									<option value="32">32</option>
+									<option value="33">33</option>
+									<option value="34">34</option>
+									<option value="35">35</option>
+									<option value="36">36</option>
+									<option value="37">37</option>
+									<option value="38">38</option>
+									<option value="39">39</option>
+									<option value="40">40</option>
+									<option value="41">41</option>
+									<option value="42">42</option>
+									<option value="43">43</option>
+									<option value="44">44</option>
+									<option value="45">45</option>
+									<option value="46">46</option>
+									<option value="47">47</option>
+									<option value="48">48</option>
+									<option value="49">49</option>
+									<option value="50">50</option>
+									<option value="51">51</option>
+									<option value="52">52</option>
+									<option value="53">53</option>
+									<option value="54">54</option>
+									<option value="55">55</option>
+									<option value="56">56</option>
+									<option value="57">57</option>
+									<option value="58">58</option>
+									<option value="59">59</option>
+
+								</select>
+								<span>秒</span>
+							</p>
+						</div>
+						<div class="tj">
+							<p id="calorie" style="color: red;position: absolute; left: 40px;top:-25px;"></p>
+							<input type="button" name="" id="btn_calculate" value="计算" class="btn_calculate" />
+							<input type="button" name="" id="btn_reset" value="重置" class="btn_reset" />
+						</div>
+						<div class="tb_result">
+							<p>预计用时：</p>
+							<table border="1" cellspacing="0" cellpadding="0">
+								<tr class="tb_title">
+									<td colspan="2">用时</td>
+									<td colspan="2">速配</td>
+								</tr>
+								<tr>
+									<td>1.5km</td>
+									<td id="t1">&nbsp;</td>
+									<td id="p1">&nbsp;</td>
+									<td>公里/分</td>
+								</tr>
+								<tr>
+									<td>3km</td>
+									<td id="t2">&nbsp;</td>
+									<td id="p2">&nbsp;</td>
+									<td>公里/小时</td>
+								</tr>
+								<tr>
+									<td>5km</td>
+									<td id="t3">&nbsp;</td>
+									<td id="p3">&nbsp;</td>
+									<td>米/秒</td>
+								</tr>
+								<tr>
+									<td>10km</td>
+									<td id="t4">&nbsp;</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>半程马拉松</td>
+									<td id="t5">&nbsp;</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>全程马拉松</td>
+									<td id="t6">&nbsp;</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="con_step" id="le">
+					<h2>国家运动员等级</h2>
+					<p class="detal">输入性别，年龄和成绩（5K，10K，半程马拉松，全程马拉松）， 给出等级，分业余和专业（专业不论年龄，也不含半程马拉松）
+					</p>
+					<div class="step_center">
+						<div class="gender">
+							性别：<input type="radio" name="" id="sex1" value="男子" />男
+							<input type="radio" name="" id="sex2" value="女子" />女
+						</div>
+						<div class="age">
+							年龄：<input type="text" name="" id="age" value="" />
+						</div>
+						<div class="runm">
+							<span>跑了：</span>
+							<select id="sl_style" name="sl_style" class="ik" style="width:180px;">
+								<option value="5km">5000米</option>
+								<option value="10km">10000米</option>
+								<option value="halfmarathon">半程马拉松</option>
+								<option value="marathon">全程马拉松</option>
+							</select>
+						</div>
+						<div class="runtime">
+							<span>用了：</span>
+							<select id="sl_hours">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+
+							</select>
+							<span>时</span>
+							<select id="sl_muins">
+								<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+									<option value="32">32</option>
+									<option value="33">33</option>
+									<option value="34">34</option>
+									<option value="35">35</option>
+									<option value="36">36</option>
+									<option value="37">37</option>
+									<option value="38">38</option>
+									<option value="39">39</option>
+									<option value="40">40</option>
+									<option value="41">41</option>
+									<option value="42">42</option>
+									<option value="43">43</option>
+									<option value="44">44</option>
+									<option value="45">45</option>
+									<option value="46">46</option>
+									<option value="47">47</option>
+									<option value="48">48</option>
+									<option value="49">49</option>
+									<option value="50">50</option>
+									<option value="51">51</option>
+									<option value="52">52</option>
+									<option value="53">53</option>
+									<option value="54">54</option>
+									<option value="55">55</option>
+									<option value="56">56</option>
+									<option value="57">57</option>
+									<option value="58">58</option>
+									<option value="59">59</option>
+							</select>
+							<span>分</span>
+							<select id="sl_second">
+								<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+									<option value="32">32</option>
+									<option value="33">33</option>
+									<option value="34">34</option>
+									<option value="35">35</option>
+									<option value="36">36</option>
+									<option value="37">37</option>
+									<option value="38">38</option>
+									<option value="39">39</option>
+									<option value="40">40</option>
+									<option value="41">41</option>
+									<option value="42">42</option>
+									<option value="43">43</option>
+									<option value="44">44</option>
+									<option value="45">45</option>
+									<option value="46">46</option>
+									<option value="47">47</option>
+									<option value="48">48</option>
+									<option value="49">49</option>
+									<option value="50">50</option>
+									<option value="51">51</option>
+									<option value="52">52</option>
+									<option value="53">53</option>
+									<option value="54">54</option>
+									<option value="55">55</option>
+									<option value="56">56</option>
+									<option value="57">57</option>
+									<option value="58">58</option>
+									<option value="59">59</option>
+							</select>
+							<span>秒</span>
+						</div>
+						<div class="jis">
+							<p id="calorie" style="color: red;position: absolute; left: 40px;top:-25px;"></p>							
+							<input type="button" name="" id="btn_calcula" value="计算" class="btn_calcu" />
+							<input type="button" name="" id="btn_ret" value="重置" class="btn_rest" />
+						</div>
+						<div class="line"></div>
+					<span id="jieguo">					
+					</span>   
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--汤乾锋-->
+		<!--bg begin-->
+		<div class="bg" id="tqf">
+			<!--calc begin-->
+			<div class="calc">
+				<!--nav-list begin-->
+				<div class="nav-list">
+					<ul>
+						<li><a href="javascript:;" id="p11">配速计算器(Pace Calculator)</a></li>
+						<li><a href="javascript:;" id="p21">配速转换器(Pace Calculator)</a></li>
+						<li><a href="javascript:;" id="p31">完跑计算器(Finish Calcultor)</a></li>
+					</ul>
+				</div>
+				<!--nav-list end-->
+				<!--calc-area begin-->
+				<div class="calc-area">
+					<div class="calc-contain" id="calc-contain">
+						<!--pace-calc begin-->
+						<div class="pace-calc" id="pace-calc">
+							<div class="pc-wrap">
+								<p class="title1">配速计算器（Pace caculater）</p>
+								<p class="title2">在马拉松运动的训练中常使用的一个概念，配速是速度的一种，
+									是每公里所需要的时间。配速=时间/距离。在本页面输入配速、时间、距离三项中
+									的任意两项计算出第三项。</p>
+								<div class="input1">
+									<ul>
+										<li><span>距离：</span>
+											<input type="text" id="klm" /><span>公里</span>
+										</li>
+										<li><span>时间：</span>
+											<input type="text" id="hour" /><span>时</span>
+											<input type="text" id="minite" /><span>分</span>
+											<input type="text" id="second" /><span>秒</span>
+										</li>
+										<li><span>配速：</span>
+											<input type="text" id="second1"/><span>分</span>
+											<input type="text" id="ss" /><span>秒/公里</span>
+										</li>
+									</ul>
+									<div class="set">
+										<button type="button" id="calc">计算</button>
+										<button type="button" id="reset">重置</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--pace-calc end-->
+						<!--pace-converter begin-->
+						<div class="pace-converter" id="pace-converter">
+							<div class="pc-wrap1">
+								<p class="title3">配速转换/计算器（Pace converter）</p>
+								<p class="title4">输入配速（？分？秒/公里）、公里/小时、米/秒中的任意一项，计算出其他两项。 
+									例如：1公里/小时=5/18米/秒=60分0秒/公里 3.33米/秒=12公里/小时=5分/公里 </p>
+								<div class="input2">
+									<ul>
+										<li><span>方式1：</span>
+											<input type="text" id="minite1" /><span>分</span>
+											<input type="text" id="s1" /><span>秒/公里</span>
+										</li>
+										<li><span>方式2：</span>
+											<input type="text" id="s2" /><span>公里/小时</span>
+										</li>
+										<li><span>方式3：</span>
+											<input type="text" id="s3" /><span>米/秒</span>
+										</li>
+									</ul>
+									<div class="set1">
+										<button type="button" id="calc1">计算</button>
+										<button type="button" id="reset1">重置</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--pace-converter end-->
+						<!--finish-time begin-->
+						<div class="finish-time" id="finish-time">
+							<div class="ft-wrap">
+								<p class="title5">完跑计算器（Finish caculater）</p>
+								<p class="title6">输入你已经跑的距离、已跑距离所用时间、计划跑的距离三项，计算出你跑完计划里程的时间
+									如你计划跑10公里、已跑8公里、用时40分钟，你跑完10公里的用时将是49分58秒 </p>
+								<div class="input3">
+									<ul>
+										<li><span>你已经跑的距离：</span>
+											<input type="text" id="klm1" /><span>公里</span>
+										</li>
+										<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用时：</span>
+											<input type="text" id="hour2" /><span>时</span>
+											<input type="text" id="minite2" /><span>分</span>
+											<input type="text" id="second2" /><span>秒</span>
+										</li>
+										<li><span>&nbsp;&nbsp;&nbsp;计划跑的距离：</span>
+											<input type="text" id="klm2" /><span>公里</span>
+										</li>
+									</ul>
+									<div class="set2">
+										<button type="button" id="calc2">计算</button>
+										<button type="button" id="reset2">重置</button>
+									</div>
+								</div>
+								<p class="title6">完成的时间是：
+									<span id="r-hour2"></span>时
+									<span id="r-minite2"></span>分
+									<span id="r-second2"></span>秒
+								</p>
+							</div>
+						</div>
+						<!--finish-time end-->
+					</div>
+				</div>
+				<!--calc-area end-->
+			</div>
+			<!--calc end-->
+			</div>
+		</div>
+		<script type="text/javascript" src="js/Pace-calc-index.js"></script>
+		<script src="js/heath.js" type="text/javascript" charset="utf-8"></script>
+		<!--bg end-->
+	</body>
+</html>

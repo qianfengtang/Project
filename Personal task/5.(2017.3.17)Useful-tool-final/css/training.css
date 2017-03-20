@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div,ul{
+	display: block;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.wrapper_1{
+	width: 1200px;
+	height:496px;
+	margin: 10px auto;	
+	background-image: url(../img/background.jpg);
+	background-size:contain;
+}
+.con_left{
+	width: 350px;
+	height: 496px;
+	float: left;
+	padding-left: 100px;
+}
+.con_left ul{
+	width: 350px;
+	height: 450px;
+    margin-top: 150px;	
+}
+.con_left li{
+	height: 38px;
+    line-height: 38px;
+    width: 270px;
+    padding-left: 40px;
+}
+.con_left li:hover{
+	background:#D0DDCE;
+}
+/*a:hover{
+	color:#89C547;
+}*/
+.con_left a{
+	font-size: 20px;
+	font-weight: 200;
+	color: #000000;
+}
+.con_right{
+	width:590px;
+	height: 496px;
+     /*display: none;*/
+	position: absolute;
+	left: 0px;
+	top: 0px;		
+}
+.all_right h2{
+	color: #6B99D1;
+}
+.all_right em{
+	font-weight: 100;
+    font-size: 20px;
+    font-family: arial;
+    font-style: normal;
+}
+.con_right .title{
+	color: #6B99D1;
+	font-size: 16px;
+}
+.center{
+	width: 590px;
+	height: 496px;
+}
+.runing{
+	width: 350px;
+	height: 90px;
+	padding-top: 20px;
+	line-height: 35px;
+}
+.tj{
+	width: 500px;
+	height: 44px;
+	margin-left: 50px;
+	margin-top: 10px;
+	position: relative;
+}
+.tj input{
+	width: 100px;
+	height: 32px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.btn_reset{
+	background:#A0A99E;
+}
+.btn_calculate{
+	background: #89C547;
+	
+}
+.tb_result{
+	margin-top: 20px;
+	border-top: 5px dotted #E6E7EB;	
+}
+.tb_result table{
+	width: 490px;
+	border: 1px solid #dfdfdf;
+	border-color: #cccccc;
+	color:#5D1212;
+	font-size: 12px;
+	line-height: 28px;
+	background: #f7f7f7;
+	text-align: center;
+}
+.tb_result td{
+	width: 25%;
+}
+.tb_result p{
+	margin-top: 25px;
+	font-size: 14px;
+	display: block;
+}
+.tb_title{
+	background: #dfdfdf;
+}
+ .con_step{
+	width:590px;
+	height: 496px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+.detal{
+	margin-top: 20px;
+}
+.step_center{
+	width: 590px;
+	height: 246px;
+	margin-top: 30px;
+	line-height: 35px;
+}
+.jis{
+	width: 500px;
+	height: 44px;
+	margin-left: 50px;
+	margin-top: 10px;	
+}
+.jis input{
+	width: 100px;
+	height: 32px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.btn_rest{
+	background:#A0A99E;
+}
+.btn_calcu{
+	background: #5EB84C;
+	
+}
+.line{
+    background:url(../img/dht.png) no-repeat;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.all_right{
+	width:590px;
+	height: 496px;
+	position: relative;
+	float: left;
+
+}

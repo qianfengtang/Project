@@ -1,0 +1,169 @@
+/*commen css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 1200px;
+	height: 496px;
+	margin:  5px auto;
+	background-image: url(../img/background.jpg);
+	background-size:contain;
+}
+.sidebar{
+	width: 350px;
+	height: 456px;
+	float:left;
+	padding-top: 40px;
+	padding-left: 100px;
+	/*background: skyblue;*/   
+	position: relative;
+}
+.sidebar ul:before{
+	width: 180px;
+	height: 496px;
+	content: '';
+	background: url(../img/ico1.png);
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.sidebar ul li{
+	margin: 10px;
+	position: relative;
+	list-style: none;
+	/*z-index: 2;*/
+}
+
+.sidebar li a{
+	display: block;
+	text-decoration: none;
+	color: #666;
+	font: 20px/40px "microsoft yahei";
+}
+.sidebar li a:hover{
+	color: #7f9943;
+	background: rgba(209,227,168,.6);
+}
+.content3,.content2,.content1{
+	width: 590px;
+	height: 496px;
+	float:left;
+	margin-left: 30px;
+}
+.content1{
+	width: 590px;
+	height: 496px;
+	float:left;
+	margin-left: 30px;
+	display: none;
+}
+.content2{
+	width: 590px;
+	height: 496px;
+	float:left;
+	margin-left: 30px;
+	display: none;
+}
+.content3 h2,.content1 h2,.content2 h2{
+	/*font-size: 30px;*/
+	color: #f07b72;
+	margin-bottom: 8px;
+}
+.content3 em,.content1 em,.content2 em{
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 500;	
+}
+.content p,.content span,.time p{
+	font: 14px/22px "microsoft yahei";
+}
+.time{
+	margin: 34px 0;
+}
+.time p{
+	margin-top: 6px;
+	text-indent: 2em;
+}
+.muit,.seec{
+	width: 51px;
+	height: 22px;
+	outline: none;
+	vertical-align: middle;
+	
+}
+#count,#clear,#count1,#clear1,#count2,#clear2{
+	width: 102px;
+	height: 34px;
+	background: #ef9b94;
+	border: 0;
+	outline: none;
+	font: 18px/34px "microsoft yahei";
+	margin-left: 6px;
+	border-radius: 6px;
+}
+#count,#count1,#count2{
+	margin-left: 40px;
+}
+.result{
+	position: relative;
+}
+.result p{
+	/*margin-top: 8px;*/
+	position: absolute;
+	top: 4px;
+	/*line-height: 20px;*/
+	display: none;
+}
+.table1{
+	width: 580px;
+	border: 1px solid #dfdfdf;
+	background: #f7f7f7;
+	position: absolute;
+	top: 24px;
+	display: none;
+}
+.table1 tr:first-child td{
+	border-top: 0;
+}
+.table1 tr td:nth-child(4){
+	border-right: 0;
+}
+.table1 td{
+	width: 145px;
+	color: #666;
+	font: 14px/34px "microsoft yahei";
+	border-top: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	padding: 0 10px;
+}
+.right{
+	text-align: right;
+}
+.bim,.run{
+	margin: 20px 80px;
+}
+.bim input,.run input{
+	width: 50px;
+	height: 20px;
+	margin-top: 10px;
+	outline: none;
+}
+
+#pass,#pass1{
+	color: #ff0000;
+	font-size: 14px;
+	display: none;
+}
+.resule,.round,.resule1{
+	display: inline-block;
+	/*width: 66px;*/
+	height: 24px;
+	/*background: red;*/
+	/*vertical-align: middle;*/
+}
+.ind{
+	display: inline-block;
+	text-indent: 2em;
+}
