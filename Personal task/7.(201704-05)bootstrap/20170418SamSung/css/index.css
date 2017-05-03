@@ -1,0 +1,215 @@
+.wrap{
+	margin-bottom: 50px;
+	font-family: 'SamsungOne', 'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', arial !important;
+}
+.wrap a:hover{
+	color: #1428a0 !important;
+}
+/*导航部分*/
+.navbar-brand{
+	float: right;
+}
+.iconfont {
+	display: inline-block;
+}
+.logo{
+	position: absolute;
+	 top: 0;
+    left: 50%;
+	width: 125px;
+	height: 19px;
+	padding: 16px 0 22px;
+	margin-left: -65px;
+}
+@media (max-width:992px)and(min-width:768px){
+	.logo{
+		margin-left: 25px;
+	}
+}
+.logo1{
+	display: block;
+	width: 125px;
+	height: 19px;
+    background-image: url(../img/sp-gnb-pc.png);]
+    background-repeat: no-repeat;
+    background-position:-2px 0 ;
+    z-index: 1000;
+}
+.header,.navbar{
+	background-color: #fff;
+	height: 64px;
+	border-bottom: 1px solid #dadada;
+}
+.dropdown-toggle,.rgt a{
+	height: 63px;
+	padding-top: 1px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #363636;
+	line-height: 40px !important;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+.wrap .dropdown-toggle:hover{
+	background: #FFFFFF !important;
+	border-bottom:2px solid #1428a0 !important;
+}
+.dropdown-menu{
+	margin-top: 2px !important;
+}
+.navbar-nav a{
+	color: #363636 !important;
+}
+.arrow{
+	visibility: hidden;
+}
+#shouhou:hover .arrow{
+	visibility: visible;
+}
+.nav>li>a{
+	padding: 10px 12px;
+}
+.bg1{
+	width: 100%;
+	height: auto;
+	border: 1px solid #dadada;
+	border-width: 1px 0;
+	background-color: #fff;
+}
+/*导航子列表效果*/
+.ad{
+	position: relative;
+	z-index: 10;
+}
+.listparent1{
+	padding: 47px 45px 14px 25px;
+	position: absolute;
+}
+.close1{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.listparent1>li>ul>li{
+	margin-bottom: 10px;
+}
+.dropdown{
+	background: #FFFFFF;
+	z-index: 1000;
+}
+/*导航结束*/
+/*广告开始*/
+.ad1{
+	background-image: url(../img/ad1.jpg);
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.ad-bg{
+	background:rgba(0,0,0,0) ;
+}
+.ad1-title1{
+	color: #fff !important;
+	font-size: 2.22rem;
+	line-height: 1.1rem;text-shadow: 1px 1px 10px #666;
+	font-weight: bold;
+	text-align: right;
+}
+.ad1-title1 span{
+	display: inline-block;
+	min-width: 2px;
+	margin: 0 1rem;
+}
+.ad1-title2{
+	position: absolute;
+	width: 100%;
+	left: 0%;
+	top: 50%;
+	text-align: center;
+	line-height: 1.32em;
+	font-size: 4.8em;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.ad1-title2 span{
+	display: inline-block;
+	margin-right: 24%;
+}
+.ad1-btn button,.ad2 a,.ad5 a{
+	margin-left: 6px;
+	margin-right: 6px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+	padding: 0.83333rem 1.73611rem 0.76389rem;
+	border: 2px solid #000;
+	-webkit-border-radius: 5px;
+	border-color: #fff;
+	font-weight: bold;
+}
+.ad1-btn button:hover,.ad2 a:hover,.ad3 a:hover,.ad5 a:hover{
+	color: #fff;
+	border-color: #5f5f5f;
+	background-color: #5f5f5f;
+}
+.ad2 img{
+	width: auto;
+	height: 100%;
+	max-width: 100%;
+	max-height: 620px;
+	vertical-align: top;
+}
+.ad2 .ad2-title1{
+	text-align: center;
+	margin-top:15% ;
+}
+.ad2 h2,.ad3 h2{
+	font-weight: bold;
+	/*font-size: 4em;*/
+}
+.ad2 a,.ad3 a,.ad3 a{
+	background-color: transparent;
+	border: 2px solid #000;
+	transition: .3s ease-in-out;
+	color: #000;
+	line-height: 1em;
+}
+.ad2 a:hover,.ad3 a:hover,.ad5 a:hover{
+	text-decoration: none;
+	color:white !important;
+}
+.ad3{
+	background: linear-gradient(to bottom, #f5f5f5 0%, #E4E4E4 100%);
+}
+.ad3 .ad3-title1{
+	margin-top: 10%;
+}
+.ad5{
+	background: black;
+}
+.ad5 img{
+	width: 100%;
+}
+.ad5-title1{
+	text-align: center;
+	margin-top: -15%;
+}
+/*广告结束*/
+/*注意点开始*/
+.attention{
+	border-bottom: 1px solid #d0d0d0;
+	background: #f7f7f7;
+}
+.attention p{
+	padding: 21px 1.75% 20px;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+.return{
+	background: #f7f7f7;
+}
+.return a{
+	color: #363636;
+	font-size: 12px;
+	line-height:5.2em ;
+}
+/*注意点结束*/

@@ -1,0 +1,474 @@
+/*主页文档开始*/
+.wrap{
+	font-family: "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei",Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #666;
+}
+.wrap a{
+	color: #666;
+}
+.wrap a:hover{
+	text-decoration: none;
+}
+.wrap li{
+	list-style: none;
+}
+/*头部开始*/
+.header{
+	background-color: #f7f7f7;
+	padding: 2px 0;
+	color: #666;	
+}
+.header ul{
+	padding: 5px 0;
+	margin-bottom:0 ;
+}
+.header a{
+	color: #666;
+}
+/*头部结束*/
+/*导航开始*/
+.nav-ad{
+	background-color: rgb(247, 247, 247);
+	border-bottom: 1px solid #ddd;
+}
+.nav-area,.tab1 nav{
+	background-color: #fff !important;
+	border: none;
+}
+.nav-area a{
+	display: inline-block;
+	margin-left: 12px;
+	padding: 20px 13px 30px;
+	font-size: 16px;
+	color: #333333;
+	margin-left: 0px;
+}
+.nav-area .nav-list,.#nav-li{
+	line-height: 1.5;
+}
+.nav-area .logo{
+	height: 93px;
+	padding: 12px;
+}
+.nav-list{
+	padding-top: 20px;
+}
+.nav-list li{
+	padding-bottom: 23px;
+}
+.current{
+	background-color: #d40b07;
+}
+.current a{
+	color: white !important;
+}
+/*导航广告开始*/
+.nav-ad-list li{
+	margin-bottom: 5px;
+}
+.nav-ad-list ul li:first-child{
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.nav-ad-list a{
+	color: #333333;
+}
+.row-pic{
+	margin-top: 15px;
+	border-top: 1px solid #e6e6e6;
+	padding-top: 15px;
+}
+.nav-ad-list {
+	display: none;
+}
+/*导航广告结束*/
+/*导航结束*/
+/*轮播开始*/
+/*轮播结束*/
+/*主页内容开始*/
+.content{
+	padding-top: 30px;
+	background-color: #f7f7f7;
+	padding-bottom: 30px;
+}
+.content-box,.footad{
+	border: 1px solid #e6e6e6;
+	padding: 15px;
+	background-color: #fff;
+}
+.title{
+	margin-bottom: 15px;
+}
+.title a{
+	padding-top:25px ;
+}
+.hotnews{
+	margin-bottom: 25px;
+}
+.hotnews:last-of-type{
+	margin-bottom: 0;
+}
+.news h4{
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.gonews1,.gonews2,.gonews4,.gonews5{
+	display: none;
+}
+.title b{
+	display: inline-block;
+	
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.title h3>span{
+	cursor: pointer;
+}
+.title h3>span:hover{
+	color: #c2191b;
+}
+/*主页内容结束*/
+/*底部轮播开始*/
+.footlunbo{
+	background-color: #f7f7f7;
+	padding-bottom: 30px;
+}
+.footad{
+	padding: 20px;border: 1px solid #e6e6e6;
+	box-sizing: border-box;line-height: 1.428571429;
+	position: relative;
+}
+.ad-box{
+	overflow: hidden;
+}
+.img-list img{
+	float: right;
+	width: 77px;
+	height: 77px;
+	overflow: hidden;
+}
+.img-list a{
+	display: block;
+	width: 103px;
+}
+.img-list li{
+	padding: 0 15px;
+	float: left;
+}
+.img-list{
+	width: 10000px;
+	margin-bottom: 0;
+	position: relative;
+	/*transition: all 800ms ease 0s;*/
+	left: 0px;
+	margin-left: 20px;
+}
+.prev-btn{
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 40%;box-sizing: border-box;
+}
+.next-btn{
+	display: block;
+	position: absolute;
+	top: 40%;
+	right: 20px;box-sizing: border-box;
+}
+/*底部轮播结束*/
+/*友情链接开始*/
+.friendlink{
+	background-color: #5d5d58;
+	padding: 20px 0 40px;
+}
+.friendlink ul{
+	margin-bottom: 0;
+}
+.fl a{
+	color: #fff;
+}
+.fl li{
+	margin-bottom: 5px;
+}
+.fl li:first-of-type{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+/*友情链接结束*/
+/*底部bannar开始*/
+.footbannar,.footbannar1{
+	background-color: #4d4c49;
+	padding: 10px 0;
+	color: #ccc;
+}
+.footbannar ul,.footbannar1 ul{
+	margin-bottom: 0;
+}
+.footbannar a,.footbannar1 a{
+	color: #ccc;
+}
+/*底部bannar结束*/
+/*极小屏幕底部开始*/
+.phonelink{
+	background-color: #efefef;
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+}
+.text{
+	padding: 0;
+}
+.phonelink img{
+	display: block;
+	margin-top: 10px;
+}
+.phonelink h4{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.phonelink p{
+	font-size: 12px;
+}
+.phonelink a{
+	display: block;
+	font-size: 12px;
+	margin-top: 25px;
+	color: #ffffff;
+	background-color: #d2322d;
+	border-color: #ac2925;
+	padding: 6px 12px;
+	border-radius: 4px;
+}
+/*极小屏幕底部结束*/
+/*主页文档结束*/
+/*第二个页面开始*/
+.sec-nav,.third-nav,.fourth-nav{
+	padding: 15px 0;
+}
+.sec-nav span,.third-nav span,.fourth-nav span{
+	font-size: 16px;
+}
+.sec-content ul li{
+	list-style:circle;
+}
+.sec-ad{
+	padding-bottom: 30px;
+}
+.sec-ad .sec-content{
+	height: 430px;
+	border: 1px solid #e6e6e6;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+.sec-content h3{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.sec-content h3 img{
+	padding-top: 8px;
+}
+.sec-content h4{
+	color: #999;
+}
+.sec-con-ad img{
+	display: block;
+	width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+.sec-content p,.sec-content ul{
+	margin-top: 20px;
+	font-size: 15px;
+	color: #333;line-height: 26px;
+}
+.sec-content ul a{
+	font-size: 15px;
+	color: #333;
+}
+.sec-content ul li{
+	margin-bottom: 5px;
+}
+.sec-content-third{
+	border: 1px solid #e6e6e6;
+	padding: 15px;
+}
+/*第二个页面结束*/
+/*第三个页面开始*/
+.row1 img{
+	width: 100%;
+	max-height:360px ;
+	border: 1px solid #e6e6e6;
+}
+.third-content{
+	padding: 30px 25px;
+	margin-top: 18px;
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+}
+.third-content h4{
+	margin: 2px 0 3px 0;
+	font-size: 20px;
+}
+.third-content p{
+	color: #d5d5d5;
+	font-size: 14px;
+}
+.third-content .col-xs-8{
+	padding-left: 0;
+	padding-right: 0;
+}
+.third-content .col-xs-4 img{
+	max-height: 50px;
+}
+.third-ad{
+	padding-bottom: 30px;
+}
+/*第三个页面结束*/
+/*第四个页面开始*/
+.sec-content ul{
+	padding-left: 15px;
+}
+.row3{
+	position: relative;
+	margin-bottom: 30px;
+}
+.row3-img{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #e6e6e6;
+	max-height: 359px;
+}
+.row3-content{
+	position: absolute;
+	right: 15px;
+	top: 60px;
+}
+.row3-content h2{
+	color: #999;
+}
+.row3-content h1 img{
+	display: inline-block;
+}
+.sec-more{
+	font-size: 15px;
+	font-weight: 100;
+	margin-top: -18px;
+}
+/*第四个页面结束*/
+/*极小页面*/
+@media (max-width:767px){
+	.navbar-toggle{
+		padding-top: 10px;
+		margin-top: 32px;
+	}
+	#nav-li li{
+		padding: 0;
+	}
+	#nav-li a{
+		font-size: 15px;
+	}
+	.navbar-form input{
+		width: 205px !important;
+		float: left;
+		padding: 0;
+	}
+	.navbar-form button{
+		float: right;
+		margin-left: 5px;
+	}
+	.footbannar1 ul li a,.footbannar1 ul li{
+		font-size: 12px;
+		line-height: 1.42;
+	}
+	.title h3,.title h3 span{
+		font-size: 18px;
+		font-weight:500 !important;
+		line-height: 24px;
+	}
+	.hotnews h4,.news h4{
+		font-size: 16px;
+		font-weight: 500 !important;
+	}
+	.hotnews p,.news p{
+		font-size: 13px;
+	}
+}
+
+/*小页面*/
+@media (min-width:768px) and (max-width:991px) {
+	.row3-content{
+		top:30px;
+		width:324px ;
+	}
+	.row3-content h1{
+		font-size: 28px !important;
+	}
+	.row3-content h2{
+		font-size: 24px !important;
+	}
+	.sec-content ul a{
+		font-size: 12px !important;
+	}
+	.sec-content{
+		height: 438px !important;
+	}
+	.sec-content ul li{
+		line-height:1.42857143;
+	}
+	#nav-li a{
+		font-size: 15px;
+		padding: 8px;
+	}
+	#nav-li li{
+		padding: 0;
+	}
+	.navbar-header img{
+		width: 80px !important;
+		padding-top: 12px;
+	}
+	.navbar-form input{
+		width: 45px !important;
+		padding: 0;
+	}
+	.navbar-form button{
+		width: 20px !important;
+		height: 34px;
+		padding: 0;
+	}
+	.tab1{
+		height: 65px;
+		overflow: hidden;
+	}
+	.footbannar1 li a{
+		font-size: 12px !important;
+		text-align: center;
+	}
+	.row1 img{
+		max-height: 218px !important;
+	}
+	.third-content p{
+		font-size: 12px;
+	}
+	.sec-content p{
+		font-size: 12px !important;
+		line-height: 22px !important;
+	}
+	.title h3,.title h3 span{
+		font-size: 19px !important;
+		font-weight: 100;
+	}
+}
+/*中等页面*/
+@media (min-width:992px) and (max-width:1199px) {
+	.row1 img{
+		max-height: 218px !important;
+	}
+}
+/*大页面*/
+@media (min-width:1200px){
+	
+}
