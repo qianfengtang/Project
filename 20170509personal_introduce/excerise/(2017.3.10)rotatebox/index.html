@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旋转盒子</title>
+		<style type="text/css">
+		.box{
+			width: 100px;
+			height: 100px;
+			text-align:center;
+			margin: 100px auto;
+			position: relative;
+		}
+		.box div{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			text-align:center;
+			font: 50px/50px "微软雅黑";
+		}
+		.box div:nth-of-type(1){
+			left: 100px;
+			top: 100px;
+			background: #0088A4;
+		}
+		.box div:nth-of-type(2){
+			left:0px;
+			top:100px;
+			background: #00008B;
+			transform-origin: right;
+			-ms-transform-origin: right;
+			-moz-transform-origin: right;
+			-webkit-transform-origin: right;
+			transform: rotateY(90deg);
+			-ms-transform: rotateY(90deg);
+			-moz-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg);
+		}
+		.box div:nth-of-type(3){
+			left: 100px;
+			top: 0px;
+			background: #008000;
+			transform-origin: bottom;
+			-ms-transform-origin: bottom;
+			-moz-transform-origin: bottom;
+			-webkit-transform-origin: bottom;
+			transform: rotateX(-90deg);
+			-ms-transform: rotateX(-90deg);
+			-moz-transform: rotateX(-90deg);
+			-webkit-transform: rotateX(-90deg);
+		}
+		.box div:nth-of-type(4){
+			left: 100px;
+			top: 200px;
+			background:#333333;
+			transform-origin:top;
+			-ms-transform-origin:top;
+			-moz-transform-origin:top;
+			-webkit-transform-origin:top;
+			transform: rotateX(90deg);
+			-ms-transform: rotateX(90deg);
+			-moz-transform: rotateX(90deg);
+			-webkit-transform: rotateX(90deg);
+		}
+		.box div:nth-of-type(5){
+			left: 200px;
+			top: 100px;
+			background:#73B9FF;
+			transform-origin: left;
+			-ms-transform-origin: left;
+			-moz-transform-origin: left;
+			-webkit-transform-origin: left;
+			transform: rotateY(-90deg);
+			-moz-transform: rotateY(-90deg);
+			-ms-transform: rotateY(-90deg);
+			-webkit-transform: rotateY(-90deg);
+		}
+		.box div:nth-of-type(6){
+			left: 100px;
+			top: 100px;
+			background:#00AFC7;
+			transform: translateZ(100px);
+			-ms-transform: translateZ(100px);
+			-moz-transform: translateZ(100px);
+			-webkit-transform: translateZ(100px);
+		}
+		.box{
+			transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			perspective: 1000px;
+			-ms-perspective: 1000px;
+			-webkit-perspective: 1000px;
+			animation: boxmove 7s infinite;
+			-ms-animation: boxmove 7s infinite;
+			-moz-animation: boxmove 7s infinite;
+			-webkit-animation: boxmove 7s infinite;
+		}
+		@keyframes boxmove{
+			 0%{transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);}   //按自己的要求添加样式，分割动画帧数
+    		50%{transform:rotateX(230deg) rotateY(-20deg) rotateZ(-90deg);}
+    		100%{transform:rotateX(-360deg) rotateY(360deg) rotateZ(-360deg);}
+		}
+		@-moz-keyframes boxmove{
+			 0%{transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);}   //按自己的要求添加样式，分割动画帧数
+    		50%{transform:rotateX(230deg) rotateY(-20deg) rotateZ(-90deg);}
+    		100%{transform:rotateX(-360deg) rotateY(360deg) rotateZ(-360deg);}
+		}
+		@-ms-keyframes boxmove{
+			 0%{-ms-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);}   //按自己的要求添加样式，分割动画帧数
+    		50%{-ms-transform:rotateX(230deg) rotateY(-20deg) rotateZ(-90deg);}
+    		100%{-ms-transform:rotateX(-360deg) rotateY(360deg) rotateZ(-360deg);}
+		}
+		@-webkit-keyframes boxmove{
+			 0%{-webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);}   //按自己的要求添加样式，分割动画帧数
+    		50%{-webkit-transform:rotateX(230deg) rotateY(-20deg) rotateZ(-90deg);}
+    		100%{-webkit-transform:rotateX(-360deg) rotateY(360deg) rotateZ(-360deg);}
+		}
+		.box:hover div:nth-of-type(1){
+			transform: translateZ(-200px);
+			-ms-transform: translateZ(-200px);
+		}
+		.box:hover div:nth-of-type(2){
+			transform: translateX(-100px) rotateY(90deg);
+			-ms-transform: translateX(-100px) rotateY(90deg);
+			-webkit-transform: translateX(-100px) rotateY(90deg);
+		}
+		.box:hover div:nth-of-type(3){
+			transform: translateY(-100px) rotateX(90deg);
+			-ms-transform: translateY(-100px) rotateX(90deg);
+			-webkit-transform: translateY(-100px) rotateX(90deg);
+		}
+		.box:hover div:nth-of-type(4){
+			transform: translateY(100px) rotateX(-90deg);
+			-ms-transform: translateY(100px) rotateX(-90deg);
+			-webkit-transform: translateY(100px) rotateX(-90deg);
+		}
+		.box:hover div:nth-of-type(5){
+			transform: translateX(100px) rotateY(-90deg);
+			-ms-transform: translateX(100px) rotateY(-90deg);
+			-webkit-transform: translateX(100px) rotateY(-90deg);
+		}
+		.box:hover div:nth-of-type(6){
+			transform: translateZ(200px);
+			-ms-transform: translateZ(200px);
+			-webkit-transform: translateZ(200px);
+		}
+		</style>
+	</head>
+	<body>
+		    <div class="box">
+		        <div>1</div>
+		        <div>2</div>
+		        <div>3</div>
+		        <div>4</div>
+		        <div>5</div>
+				<div>6</div>
+		    </div>
+	</body>
+</html>

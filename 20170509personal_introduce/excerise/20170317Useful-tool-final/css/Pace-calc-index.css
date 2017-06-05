@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*bg begin*/
+.bg{
+	width: 1200px;
+	height: 496px;
+	margin: 10px auto;
+	text-align: center;
+	font: 14px Lucida Sans Unicode, Myriad Pro, Hiragino Sans GB, Heiti SC, Microsoft YaHei, arial;
+	background-image: url(../img/background.jpg);
+	background-size:contain;
+}
+.nav-list a{
+	text-decoration: none;
+	color: #666;
+}
+.nav-list li{
+	list-style:circle;
+}
+/*calc begin*/
+.calc{
+	width: 970px;
+	height: 496px;
+	margin: 0 auto;
+}
+/*nav-list begin*/
+.nav-list{
+	width: 350px;
+	height: 496px;
+	float: left;
+}
+.nav-list a{
+	font-size: 16px;
+	color: #666;
+	line-height: 38px;
+	width: 254px;
+}
+.nav-list a:hover{
+	color: #39942d;
+}
+.nav-list li{
+	height: 38px;
+	width: 269px;
+	margin-left: 1px;
+}
+.nav-list ul{
+	height: 110px;
+	margin-top:106px ;
+}
+/*nav-list end*/
+/*calc-area begin*/
+.calc-area{
+	width: 590px;
+	height: 400px;
+	float: right;
+	overflow: hidden;
+	position: relative;
+/*	background-image:url(img/calc-bg.jpg);
+	background-size:contain ;*/
+}
+.calc-contain{
+	width:10000px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: left;
+}
+/*pace-calc begin*/
+.pace-calc{
+	width:590px;
+	height: 400px;
+	float: left;
+}
+.pc-wrap,.pc-wrap1,.ft-wrap{
+	width: 590px;
+	height: 275px;
+	padding-top: 50px;
+}
+.title1,.title3,.title5{
+	height: 38px;
+	font-size: 24px;
+	color: #6b99d1;
+	font-weight: bold;
+}
+.title2,.title4,.title6{
+	height: 48px;
+	padding-top: 8px;
+	color: #666;
+	line-height: 24px;
+	word-wrap: break-word;
+}
+.input1,.input2,.input3{
+	height: 154px;
+	padding-top: 26px;
+}
+.input1 ul,.input2 ul,.input3 ul{
+	height: 110px;
+}
+.input1 li,.input2 li,.input3 li{
+	height: 24px;
+	padding-bottom: 8px;
+	list-style: none;
+}
+.input1 span{
+	font-style: inherit;
+	/*font: 14px Lucida Sans Unicode, Myriad Pro, Hiragino Sans GB, Heiti SC, Microsoft YaHei, arial;*/
+}
+.input1 input,.input2 input,.input3 input{
+	display: inline-block;
+	width: 35px;
+	height: 17px;
+	padding: 2px;
+	font-style: inherit;
+	outline: none;
+}
+.set,.set1,.set2{
+	width:550px ;
+	height: 32px;
+	padding: 12px 0 0 40px;
+}
+#calc,#reset,#calc1,#reset1,#calc2,#reset2{
+	border-radius: 5px;
+	background: #5eb84c;
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	padding-top:2px ;
+	color: white;
+	outline: none;
+	border: 0;
+}
+#reset,#reset1,#reset2{
+	background: #a0a99e;
+}
+/*pace-calc end*/
+/*pace-converter begin*/
+.pace-converter{
+	width:590px;
+	height: 400px;
+	/*border: 1px solid black;*/
+	float: left;
+}
+/*pace-converter end*/
+/*finish-time begin*/
+.finish-time{
+	width:590px;
+	height: 400px;
+	float: left;
+	/*border: 1px solid black;*/
+}
+/*finish-time end*/
+/*calc-area end*/
+/*calc end*/
+/*bg end*/

@@ -1,0 +1,469 @@
+.wrap{
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 微软雅黑;
+	color: #222222;
+}
+a{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:none ;
+}
+li{
+	list-style: none;
+}
+/*第一个页面开始*/
+/*登录注册开始*/
+.fascio-login ul{
+	margin-bottom: 0;
+}
+.fascio-login a{
+	font-size: 16px;
+}
+/*导航开始*/
+.nav-header,.nav-content{
+	height: 100px !important;
+	background: white !important;	
+	margin-bottom: 0;
+	border: none;
+}
+.logo span{
+	color: rgb(255, 102, 55);
+	font-size: 32px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.logo span:last-of-type{
+	color: rgb(204, 204, 204);
+}
+.nav-list  a{
+	padding: 15px 0 28px;
+	font-size: 16px;
+	border-bottom:2px solid transparent ;
+}
+.nav-list li{
+	margin-left:10px ;
+}
+.nav-list a:hover{
+	color: #ff6637 !important;
+	border-bottom: 2px solid #ff6637 !important;
+}
+.navbar-header,.navbar-nav{
+	margin-top: 20px;
+}
+.current{
+	color: #ff6637 !important;
+	border-bottom: 2px solid #ff6637 !important;
+}
+.logo-plan{
+	position: relative;
+}
+.sub-list{
+	position: absolute;
+	padding-left: 0;
+	background:#ff6637 ;
+	left: 2px;
+	top: 62px;
+	display: none;
+	z-index: 10000 !important;
+}
+.sub-list a{
+	color: white;
+	font-size: 14px;
+	padding: 0;
+}
+.sub-list li{
+	margin: 0;
+	height: 40px;
+	padding: 0 10px;
+	text-align: center;
+	line-height: 40px;
+}
+.sub-list a:hover{
+	color: white !important;
+	text-decoration: none;
+}
+.sub-list:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 2px solid #ff6637;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	position: absolute;
+	left: 50%;
+	top: -2px;
+	z-index: 1000;
+}
+.collapse{
+	background: white !important;
+}
+/*轮播开始*/
+.lunbo{
+	cursor: pointer;
+}
+.lunbo img{
+	width: 100%;
+}
+.pgh,.service-logo p{
+	text-align: left;
+	color: #666666;
+	cursor: pointer;
+}
+.ad h4{
+	text-align: center;
+}
+.ad{
+	position: relative;
+	z-index: 1 !important;
+}
+.ad .center-block{
+	transform-origin:center ;
+	perspective: 100px;
+	background: transparent;
+}
+.ad .center-block:hover{
+	animation: rotate 1s ease;
+}
+@-moz-keyframes rotate{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+/*第一个页面结束*/
+/*第二个网站开始*/
+/*中部服务内容*/
+.service-logo{
+	height: 85px;
+	text-align: left;
+}
+.service-logo i{
+	display: block;
+	width: 4px;
+	height: 45px;
+	background: rgb(230, 103, 84);
+	margin-right: 10px;
+	margin-top: 28px;
+}
+.service-logo h3{
+	color: #e66754;
+}
+.service-logo{
+	margin-bottom: 8px;
+}
+/*服务广告*/
+.service-ad img{
+	max-height: 228px;
+	width: 100%;
+	cursor: pointer;
+}
+.service-ad{
+	margin-bottom: 20px;
+}
+/*底部介绍开始*/
+.introduce{
+	color: #b6b6b6;
+	background: #222222;
+	text-align: center;
+}
+.introduce a{
+	color: #b6b6b6;
+	display: inline-block;
+	padding-right: 13px;
+}
+.introduce a:hover{
+	text-decoration:none ;
+	color: #ff6637;;
+}
+.introduce ul:first-child{
+	margin-top: 25px;
+}
+/*第二个页面结束*/
+/*第三个页面开始*/
+.middle-content{
+	margin-top: 50px;
+	color: #666666;
+	font-family: "微软雅黑";
+	cursor: move; 	
+}
+.second-page p{
+	text-align: center;
+}
+/*中部内容*/
+.content-left h4:first-of-type{
+	background: #ff6637;
+	font-weight: normal;
+	padding: 10px 0;
+	color: white;
+}
+.content-left p:nth-of-type(1) img,.content-left p:nth-of-type(2) img{
+	display: inline-block;
+	margin-right: 5px;
+}
+.content-left a{
+	padding-top: 2px;
+}
+.content-left p+p{
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #e0e0e0;
+}
+.right-item{
+	padding: 15px 0;
+	border-bottom: 1px dashed #dbdbdb;
+}
+.article-item{
+	height: 40px;
+	line-height: 40px;
+}
+.article-item span,.article-item a{
+	font-size: 16px;color: #ff6637;
+	display: inline-block;
+	margin-top: 12px;
+}
+.article-item a{
+	color: #999999;
+}
+.right-item h5:hover,.right-item h5 a:hover{
+	color: #ff6637;
+}
+/*第三个页面结束*/
+/*第四个页面开始*/
+.forth-bannar img{
+	width:100% ;
+}
+.result-show .row div{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.show-list{
+	padding-left: 0;
+}
+.show-list li{
+	display: none;
+} 
+.forth-result h3{
+	text-align: center;color: rgb(33, 33, 33);
+	font-size: 30px;
+	margin-top: 50px;
+}
+.result-choose li:first-of-type{
+	margin-left: 37%;
+}
+.result-choose li{
+	margin: 0 10px;
+	border: 1px #cccccc solid;
+	background: rgb(255, 255, 255);
+	color: #666666;
+	border-radius: 50px;
+	padding: 12px 24px;
+	font-size: 16px;
+	transition:all .3s ease;
+	cursor: pointer; 
+}
+.result-choose .choose{
+	background: #ff6637;
+	border: 1px solid #ff6637;
+	color: white;
+}
+.show-list img{
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
+	
+}
+
+/*第四个页面结束*/
+/*第五个页面开始*/
+.fifth-content{
+	margin-top: 30px;
+	text-align: center;
+}
+.fifth-content p{
+	color: rgb(153, 153, 153);
+	padding: 20px 20px;
+	line-height: 3.24;
+}
+.fifth-ad{
+	margin-bottom: 30px;
+}
+.fifth-ad .col-xs-4{
+	position: relative;
+}
+.fifth-ad .col-xs-4 img{
+	height: 500px;
+}
+.fifth-text{
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top: 35%;
+	color: white;
+}
+.fifth-text h5{
+	font-size: 25px;
+}
+.fifth-text p{
+	font-size: 20px;
+}
+/*中部人物介绍开始*/
+.fifth-man{
+	padding: 80px 30px;
+	background: #ebebeb;
+	text-align: center;
+}
+.man-dec{
+	padding: 30px;
+	background: white;
+	margin-bottom: 10px;
+}
+.man-dec p{
+	font-size: 16px;
+	color: rgb(51, 51, 51);
+}
+.man-dec small{
+	color: rgb(153, 153, 153);
+	font-size: 12px;
+}
+/*第五个页面结束*/
+/*第六个页面开始*/
+.put-up input{
+	color: #fff;
+	background-color: #ffad2b;
+}
+.pagination{
+	margin-left: 40%;
+}
+.sixth-message{
+	margin-top: 20px;
+}
+/*第六个页面结束*/
+
+
+@media (max-width:767px){
+	.logo span{
+		font-size: 18px;
+	}
+	.navbar-header,.navbar-nav{
+	margin-top: 10px;
+	}
+	.nav-list a:hover{
+	color: #ff6637 !important;
+	border-bottom:2px solid transparent !important;
+	}
+	.current{
+	color: #ff6637 !important;
+	border-bottom: 2px solid transparent !important;
+	}
+	.nav-list>li a{
+		padding: 0px 5px;
+		font-size: 12px;
+	}
+	.forth-result h3{
+	text-align: center;color: rgb(33, 33, 33);
+	font-size: 20px;
+	margin-top: 30px;
+	}
+	.result-choose li:first-of-type{
+	margin-left: 19%;
+	}
+	.result-choose li{
+	margin: 0 5px;
+	border: 1px #cccccc solid;
+	background: rgb(255, 255, 255);
+	color: #666666;
+	border-radius: 50px;
+	padding: 6px 12px;
+	font-size: 14px;
+	transition:all .3s ease;
+	cursor: pointer; 
+	}
+	.forth-bannar img{
+		height: 100px;
+	}
+	.fifth-ad .col-xs-4 img{
+		height: 135px;
+	}
+	.fifth-ad .col-xs-8,.fifth-ad .col-xs-4{
+		padding: 0 5px;
+	}
+	.fifth-text{
+		top:12%;
+		width: 100px;
+		padding-right: 5px;
+	}
+	.fifth-text h5{
+		font-size: 12px;
+	}
+	.fifth-text p{
+		font-size: 8px;
+	}
+	.man-dec{
+		padding: 5px;
+	}
+	.man-dec p{
+		font-size: 11px;
+	}
+	.man-dec small{
+		font-size: 9px;
+	}
+	.sixth-message form .col-xs-3,.sixth-message form .col-xs-8{
+		padding:0 4px;
+	}
+.sixth-message label{
+	font-size: 12px;
+	margin-top: 10px;
+}
+	.pagination{
+	margin-left: 10%;
+}
+}
+@media (min-width:768px) and (max-width:991px){
+	.logo span{
+		font-size: 22px;
+	}
+	.navbar-header,.navbar-nav{
+	margin-top: 10px;
+	}
+	.nav-list a:hover{
+	color: #ff6637 !important;
+	border-bottom: 2px solid #ff6637 !important;
+	}
+	.current{
+	color: #ff6637 !important;
+	border-bottom: 2px solid #ff6637 !important;
+	}
+	.nav-list>li a{
+		padding: 15px 5px 15px;
+	}
+	.result-choose li:first-of-type{
+	margin-left: 28%;
+	}
+	.ad p{
+		text-align: center;
+	}
+	.man-dec{
+	padding: 10px;
+	}
+	.fifth-ad .col-xs-4 img{
+		height: 177px;
+	}
+}
+@media (min-width:992px ) and (max-width:1199px) {
+	.right-item img{
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.fifth-ad .col-xs-4 img{
+		height: 410px;
+	}
+}
+@media (min-width:1200px ) {
+	.forth-bannar .container-fluid{
+		padding-left: 0px;
+	}
+}
